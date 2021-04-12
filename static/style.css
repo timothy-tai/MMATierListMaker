@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #cccccc;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Courier New";
+    font-size: 22px;
+    background-color: #a5a5a5;
+}
+
+.search {
+    font-family: "Courier New";
+    font-size: 18px;
+}
+
+.search .input {
+    border: 0;
+    outline: none;
+    color: #000000;
+}
+
+.button {
+    font-family: "Courier New";
+}
+
+.stats {
+    font-family: "Courier New";
+    font-size: 14px;
+}
+
+.remove {
+    font-family: "Courier New";
+    font-size: 14px;
+    color: #b80009;
+}

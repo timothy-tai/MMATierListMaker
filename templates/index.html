@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MMA/UFC Tier List</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>MMA/UFC Tier List</h1>
+
+    <form action="/add_fighter" method="post">
+        <div class="search">
+            <label for="fighter">Add a Fighter</label>
+            <input type="text" name="fighter" class="input" placeholder="Search Fighter Name...">
+            <button type="submit">Add</button>
+        </div>
+    </form>
+
+    {% for fighter in fighter_list %}
+        <p class="stats"> {{fighter.rank}} | {{ fighter.name }} | Record: {{fighter.record}} | Height: {{fighter.height}} | Weight: {{fighter.weight}} | Reach: {{fighter.reach}} | Stance: {{fighter.stance}} | DoB: {{fighter.dob}} | <a href="/remove_fighter/{{ fighter.name }}" class="remove remove1">Remove</a> </p>
+    {% endfor %}
+
+</body>
+</html>
