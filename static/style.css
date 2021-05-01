@@ -1,39 +1,69 @@
 body {
     margin: 0;
     padding: 0;
-    background: #cccccc;
-    text-align: center;
+    background: #ececec;
     box-sizing: border-box;
 }
-
+.title {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+h2 {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 12px;
+    align-self: flex-end;
+    margin-bottom: 21px;
+}
 h1 {
-    font-family: "Courier New";
-    font-size: 22px;
-    background-color: #a5a5a5;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 26px;
 }
 
 .search {
-    font-family: "Courier New";
+    font-family: 'Thasadith', sans-serif;
     font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
 }
 
 .search .input {
-    border: 0;
+    margin: 10px;
+    border-radius: 15px;
+    border-color: transparent;
     outline: none;
     color: #000000;
+    background-color: #ffffff;
+    font-family: 'Thasadith', sans-serif;
+    padding:2px 8px 2px 8px;
+    font-size: 16px;
 }
 
-.button {
-    font-family: "Courier New";
+button {
+    font-size: 20px;
+    border-radius: 15px;
+    border-color: transparent;
+    color: #000000;
+    margin: 0;
+    padding:0;
+    margin: 0;
+}
+button:hover {
+    cursor: pointer;
 }
 
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .stats {
-    font-family: "Courier New";
+    font-family: 'PT Sans Narrow', sans-serif;
     font-size: 14px;
 }
-
 .remove {
-    font-family: "Courier New";
     font-size: 14px;
-    color: #b80009;
+    color: #d40711;
 }
